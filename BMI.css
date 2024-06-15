@@ -12,7 +12,7 @@ body {
 
 body.dark-mode {
     background-color: #333;
-    color: #fff;
+    color: #f4f4f9;
 }
 
 section {
@@ -29,7 +29,7 @@ section {
 
 body.dark-mode section {
     background-color: #444;
-    color: #fff;
+    color: #f4f4f9;
 }
 
 @keyframes fadeIn {
@@ -40,6 +40,10 @@ h1 {
     margin: 10px 0;
     font-size: 24px;
     color: #333;
+}
+
+body.dark-mode h1 {
+    color: #f4f4f9;
 }
 
 .container {
@@ -58,7 +62,7 @@ label {
 }
 
 body.dark-mode label {
-    color: #fff;
+    color: #f4f4f9;
 }
 
 input[type="text"] {
@@ -68,10 +72,21 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #555;
+    color: #f4f4f9;
 }
 
 input[type="text"]:focus {
     border-color: #28a745;
+}
+
+body.dark-mode input[type="text"]:focus {
+    border-color: #8bc34a;
 }
 
 button {
@@ -91,15 +106,28 @@ button:hover {
     transform: scale(1.05);
 }
 
+body.dark-mode button {
+    background-color: #28a745;
+    color: #f4f4f9;
+}
+
+body.dark-mode button:hover {
+    background-color: #76b03c;
+}
+
 #results {
     margin-top: 20px;
     font-size: 20px;
     color: #555;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1.5s ease;
     padding: 10px;
     border-radius: 10px;
 }
+
+body.dark-mode #results {
+    color: #f4f4f9;
+}BMI
 
 .result-low {
     background-color: #ffdddd;
@@ -127,11 +155,19 @@ button:hover {
     margin-bottom: 10px;
 }
 
+body.dark-mode #weight-guide h3 {
+    color: #f4f4f9;
+}
+
 #weight-guide li {
     list-style-type: none;
     font-size: 16px;
     color: #555;
     margin: 5px 0;
+}
+
+body.dark-mode #weight-guide li {
+    color: #dcdcdc;
 }
 
 .logo {
@@ -149,6 +185,10 @@ button:hover {
     line-height: 100px;
 }
 
+body.dark-mode .logo {
+    background-color: #28a745;
+}
+
 .history {
     margin-top: 20px;
     text-align: left;
@@ -162,7 +202,7 @@ button:hover {
 
 body.dark-mode .history {
     background: #555;
-    color: #fff;
+    color: #f4f4f9;
     border-color: #666;
 }
 
@@ -172,9 +212,17 @@ body.dark-mode .history {
     margin-bottom: 10px;
 }
 
+body.dark-mode .history h3 {
+    color: #f4f4f9;
+}
+
 .history p {
     font-size: 16px;
     margin: 5px 0;
+}
+
+body.dark-mode .history p {
+    color: #dcdcdc;
 }
 
 .dark-mode-toggle {
